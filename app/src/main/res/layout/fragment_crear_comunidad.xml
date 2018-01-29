@@ -14,6 +14,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BUSCAR" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CREAR" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:layout_margin="10dp"
@@ -64,13 +84,12 @@
                 />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/bt_crear_midomicilio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                />
+                android:text="CONTINUAR" />
         </LinearLayout>
     </LinearLayout>
 

@@ -1,11 +1,30 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jose.prueba_fragment.buscar_comunidad"
     android:layout_gravity="center_horizontal"
-    >
+    android:orientation="vertical"
+    tools:context="com.example.jose.prueba_fragment.buscar_comunidad">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BUSCAR" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CREAR" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,53 +35,48 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            >
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                />
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                />
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
             <EditText
                 android:id="@+id/editText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                />
+                android:text="Name" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/bt_buscar_midomicilio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
-                />
+                android:text="CONTINUAR" />
         </LinearLayout>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>
